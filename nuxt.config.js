@@ -33,7 +33,8 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    // '@nuxtjs/tailwindcss',
+    '@nuxtjs/axios',
+    '@nuxtjs/tailwindcss',
     // '@nuxtjs/google-analytics', { ua: 'X1234567' },
   ],
   /*

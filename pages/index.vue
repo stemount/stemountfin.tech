@@ -1,21 +1,14 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        {{ domain }}
-      </h1>
-      <h4 class="subtitle">
-        <a href="https://ste.london">@stemount</a> productions present
-      </h4>
-
-      <p>proof that Vue/Nuxt can be ran in production</p>
+  <div class="container w-screen align-content-center">
+    <div class="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden my-4 mx-auto">
+      <GitHubProfile :username="`jaaneek`"/>
     </div>
   </div>
 </template>
 
 <script>
 import Logo from '~/components/Logo.vue'
+import GitHubProfile from "~/components/GitHubProfile";
 
 export default {
   data() {
@@ -35,10 +28,14 @@ export default {
           name: 'description',
           content: `${this.domain} - Probably yet another bad domain purchase decision by @stemount.`,
         }
-      ]
+      ],
+      bodyAttrs: {
+        class: '',
+      }
     }
   },
   components: {
+    GitHubProfile,
     Logo
   }
 }
@@ -47,15 +44,7 @@ export default {
 <style>
 a:link,
 a:visited {
-  color: #35495e; 
-}
-.container {
-  margin: 0 2rem;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  color: #35495e;
 }
 
 .title {
