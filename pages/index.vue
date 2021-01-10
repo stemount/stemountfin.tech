@@ -8,7 +8,7 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
-import GitHubProfile from "~/components/GitHubProfile";
+import GitHubProfile from '~/components/GitHubProfile';
 
 export default {
   data() {
@@ -31,7 +31,7 @@ export default {
       ],
       bodyAttrs: {
         class: '',
-      }
+      },
     }
   },
   components: {

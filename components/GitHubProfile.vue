@@ -84,10 +84,6 @@
         "updated_at": "2021-01-09T19:07:54Z"
       };
 
-      this.user = json;
-
-      return true;
-
       this.$axios(`https://api.github.com/users/${this.username}`)
         .then((response) => {
           console.log("users", response.data);
